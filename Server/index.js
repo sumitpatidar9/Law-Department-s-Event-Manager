@@ -37,6 +37,11 @@ Connect(url);
 
 app.use('/', router);
 
+app.get('/home', (req, res)=>{
+    res.send("This is the home page");
+});
+
+
 
 const port = process.env.PORT;
 app.listen(port, () =>{
