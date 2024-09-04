@@ -22,16 +22,12 @@ const front_end_url = process.env.FRONT_END_URL;
 
 
 const vercel = {
-    origin: ["https://deploy-mern-1whq.vercel.app"],
+    origin: ["https://mcsLpu.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true,
 }
 
-
-app.use(cors({
-   
-    credentials: true
-}));
+app.use(cors(vercel));
 
 
 
