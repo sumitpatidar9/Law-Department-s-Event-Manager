@@ -17,13 +17,12 @@ env.config();
 app.use(express.json());
 
 
-const vercel = {
-    origin: ["https://mcsLpu.vercel.app"],
-    methods: ["POST", "GET"],
+const cors_config = {
+    origin: true,
     credentials: true,
 }
 
-app.use(cors(vercel));
+app.use(cors(cors_config));
 
 
 
