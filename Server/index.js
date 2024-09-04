@@ -17,10 +17,6 @@ env.config();
 app.use(express.json());
 
 
-const front_end_url = process.env.FRONT_END_URL;
-
-
-
 const vercel = {
     origin: ["https://mcsLpu.vercel.app"],
     methods: ["POST", "GET"],
